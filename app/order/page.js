@@ -231,11 +231,11 @@ export default function OrderPage() {
                     onClick={() => setPickup(false)}
                     className={`p-4 rounded-sm border text-left transition-all duration-150
                       ${!pickup
-                        ? 'border-accent/60 bg-accent/5'
-                        : 'border-border hover:border-border-2'
+                        ? 'border-[#1d6fb8] bg-blue-50 ring-1 ring-[#1d6fb8]/30'
+                        : 'border-border bg-white hover:border-[#9ca3af]'
                       }`}
                   >
-                    <p className="text-sm font-semibold text-primary">Ship</p>
+                    <p className={`text-sm text-primary ${!pickup ? 'font-bold' : 'font-medium'}`}>Ship</p>
                     <p className="text-xs text-muted mt-1">$8 flat rate shipping</p>
                   </button>
                   <button
@@ -243,11 +243,11 @@ export default function OrderPage() {
                     onClick={() => setPickup(true)}
                     className={`p-4 rounded-sm border text-left transition-all duration-150
                       ${pickup
-                        ? 'border-accent/60 bg-accent/5'
-                        : 'border-border hover:border-border-2'
+                        ? 'border-[#1d6fb8] bg-blue-50 ring-1 ring-[#1d6fb8]/30'
+                        : 'border-border bg-white hover:border-[#9ca3af]'
                       }`}
                   >
-                    <p className="text-sm font-semibold text-primary">Local Pickup</p>
+                    <p className={`text-sm text-primary ${pickup ? 'font-bold' : 'font-medium'}`}>Local Pickup</p>
                     <p className="text-xs text-muted mt-1">Free — we&apos;ll coordinate</p>
                   </button>
                 </div>

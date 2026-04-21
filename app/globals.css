@@ -1,3 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:         #ffffff;
+  --surface:    #f8f9fa;
+  --surface-2:  #f1f3f5;
+  --border:     #e5e7eb;
+  --border-2:   #d1d5db;
+  --accent:     #1d6fb8;
+  --primary:    #111827;
+  --muted:      #6b7280;
+  --muted-2:    #9ca3af;
+  --available:  #16a34a;
+  --oos:        #dc2626;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  background-color: var(--bg);
+  color: var(--primary);
+  font-family: var(--font-inter);
   margin: 0;
+}
+
+@layer components {
+  .card {
+    @apply bg-surface border border-border rounded-sm;
+  }
+
+  .badge {
+    @apply text-[10px] font-mono px-2 py-0.5 rounded-sm border;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-white text-sm font-semibold px-5 py-2.5 rounded-sm
+           hover:bg-blue-700 transition-colors duration-150;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent text-primary text-sm font-semibold px-5 py-2.5 rounded-sm
+           border border-border hover:border-border-2 hover:bg-surface
+           transition-colors duration-150;
+  }
+
+  .input-field {
+    @apply w-full bg-white border border-border rounded-sm px-3 py-2.5
+           text-sm text-primary placeholder:text-muted
+           focus:outline-none focus:border-accent transition-colors duration-150;
+  }
+
+  .section-label {
+    @apply text-xs font-mono tracking-widest uppercase text-muted;
+  }
 }

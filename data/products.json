@@ -1,0 +1,324 @@
+[
+  {
+    "id": "5-amino-1mq",
+    "name": "5-Amino-1MQ",
+    "categories": ["Weight Management", "Metabolic Health"],
+    "sizes": [
+      { "label": "500mg / 30 capsules", "price": 55 },
+      { "label": "1000mg / 30 capsules", "price": 75 }
+    ],
+    "status": "available"
+  },
+  {
+    "id": "adipotide",
+    "name": "Adipotide",
+    "categories": ["Weight Management"],
+    "sizes": [{ "label": "5mg vial", "price": 75 }],
+    "status": "available"
+  },
+  {
+    "id": "aod-9604",
+    "name": "AOD-9604",
+    "categories": ["Weight Management", "Metabolic Health"],
+    "sizes": [
+      { "label": "5mg vial", "price": 30 },
+      { "label": "10mg vial", "price": 50 }
+    ],
+    "status": "available"
+  },
+  {
+    "id": "cagrilintide",
+    "name": "Cagrilintide",
+    "categories": ["Weight Management", "Metabolic Health"],
+    "sizes": [{ "label": "5mg vial", "price": 60 }],
+    "status": "available"
+  },
+  {
+    "id": "lc-216",
+    "name": "LC216",
+    "categories": ["Weight Management", "Metabolic Health"],
+    "sizes": [{ "label": "5mg vial", "price": 65 }],
+    "status": "available"
+  },
+  {
+    "id": "retatrutide",
+    "name": "Retatrutide",
+    "categories": ["Weight Management", "Metabolic Health"],
+    "sizes": [{ "label": "10mg vial", "price": 50 }],
+    "status": "available"
+  },
+  {
+    "id": "tesamorelin",
+    "name": "Tesamorelin",
+    "categories": ["Weight Management", "Metabolic Health"],
+    "sizes": [
+      { "label": "5mg vial", "price": 50 },
+      { "label": "10mg vial", "price": 95 }
+    ],
+    "status": "available"
+  },
+  {
+    "id": "tirzepatide",
+    "name": "Tirzepatide",
+    "categories": ["Weight Management", "Metabolic Health"],
+    "sizes": [
+      { "label": "5mg vial", "price": 40 },
+      { "label": "10mg vial", "price": 70 }
+    ],
+    "status": "available"
+  },
+  {
+    "id": "bpc-157",
+    "name": "BPC-157",
+    "categories": ["Healing & Recovery", "Pain & Inflammation"],
+    "sizes": [
+      { "label": "5mg vial", "price": 40 },
+      { "label": "10mg vial", "price": 65 }
+    ],
+    "status": "available"
+  },
+  {
+    "id": "tb-500",
+    "name": "TB-500",
+    "categories": ["Healing & Recovery"],
+    "sizes": [
+      { "label": "5mg vial", "price": 45 },
+      { "label": "10mg vial", "price": 75 }
+    ],
+    "status": "available"
+  },
+  {
+    "id": "wolverine",
+    "name": "Wolverine",
+    "categories": ["Healing & Recovery"],
+    "sizes": [{ "label": "10mg combo vial", "price": 75 }],
+    "status": "available"
+  },
+  {
+    "id": "epithalon",
+    "name": "Epithalon",
+    "categories": ["Anti-Aging"],
+    "sizes": [
+      { "label": "10mg vial", "price": 30 },
+      { "label": "50mg vial", "price": 120 }
+    ],
+    "status": "available"
+  },
+  {
+    "id": "fox04",
+    "name": "FOX04-DRI",
+    "categories": ["Anti-Aging"],
+    "sizes": [{ "label": "5mg vial", "price": 80 }],
+    "status": "available"
+  },
+  {
+    "id": "glutathione",
+    "name": "Glutathione",
+    "categories": ["Immune Support", "Anti-Aging"],
+    "sizes": [{ "label": "600mg vial", "price": 30 }],
+    "status": "available"
+  },
+  {
+    "id": "kisspeptin",
+    "name": "Kisspeptin-10",
+    "categories": ["Libido & Sexual Health"],
+    "sizes": [{ "label": "10mg vial", "price": 50 }],
+    "status": "available"
+  },
+  {
+    "id": "melanotan-2",
+    "name": "Melanotan 2",
+    "categories": ["Libido & Sexual Health", "Skin & Beauty"],
+    "sizes": [{ "label": "10mg vial", "price": 40 }],
+    "status": "available"
+  },
+  {
+    "id": "oxytocin",
+    "name": "Oxytocin",
+    "categories": ["Libido & Sexual Health"],
+    "sizes": [{ "label": "10mg vial", "price": 25 }],
+    "status": "available"
+  },
+  {
+    "id": "pt-141",
+    "name": "PT-141",
+    "categories": ["Libido & Sexual Health"],
+    "sizes": [{ "label": "10mg vial", "price": 50 }],
+    "status": "available"
+  },
+  {
+    "id": "dsip",
+    "name": "DSIP",
+    "categories": ["Sleep Support"],
+    "sizes": [
+      { "label": "5mg vial", "price": 35 },
+      { "label": "10mg vial", "price": 55 }
+    ],
+    "status": "available"
+  },
+  {
+    "id": "cerebrolysin",
+    "name": "Cerebrolysin",
+    "categories": ["Cognitive Enhancement"],
+    "sizes": [{ "label": "10ml vial", "price": 50 }],
+    "status": "out-of-stock"
+  },
+  {
+    "id": "selank",
+    "name": "Selank",
+    "categories": ["Cognitive Enhancement"],
+    "sizes": [
+      { "label": "5mg vial", "price": 25 },
+      { "label": "10mg vial", "price": 40 }
+    ],
+    "status": "available"
+  },
+  {
+    "id": "semax",
+    "name": "Semax",
+    "categories": ["Cognitive Enhancement"],
+    "sizes": [
+      { "label": "5mg vial", "price": 25 },
+      { "label": "10mg vial", "price": 40 }
+    ],
+    "status": "available"
+  },
+  {
+    "id": "ll-37",
+    "name": "LL-37",
+    "categories": ["Immune Support"],
+    "sizes": [{ "label": "5mg vial", "price": 35 }],
+    "status": "available"
+  },
+  {
+    "id": "thymosin-alpha-1",
+    "name": "Thymosin Alpha-1",
+    "categories": ["Immune Support"],
+    "sizes": [
+      { "label": "5mg vial", "price": 25 },
+      { "label": "10mg vial", "price": 40 }
+    ],
+    "status": "available"
+  },
+  {
+    "id": "vip",
+    "name": "VIP",
+    "categories": ["Immune Support", "Pain & Inflammation"],
+    "sizes": [{ "label": "10mg vial", "price": 50 }],
+    "status": "available"
+  },
+  {
+    "id": "ghk-cu",
+    "name": "GHK-Cu",
+    "categories": ["Skin & Beauty", "Anti-Aging", "Healing & Recovery"],
+    "sizes": [{ "label": "100mg vial", "price": 55 }],
+    "status": "available"
+  },
+  {
+    "id": "melanotan-1",
+    "name": "Melanotan 1",
+    "categories": ["Skin & Beauty"],
+    "sizes": [{ "label": "10mg vial", "price": 50 }],
+    "status": "available"
+  },
+  {
+    "id": "snap-8",
+    "name": "SNAP-8",
+    "categories": ["Skin & Beauty", "Anti-Aging"],
+    "sizes": [{ "label": "10mg vial", "price": 30 }],
+    "status": "available"
+  },
+  {
+    "id": "glow",
+    "name": "Glow",
+    "categories": ["Skin & Beauty"],
+    "sizes": [{ "label": "Contact for pricing", "price": 0 }],
+    "status": "out-of-stock"
+  },
+  {
+    "id": "klow",
+    "name": "Klow",
+    "categories": ["Healing & Recovery", "Anti-Aging", "Skin & Beauty"],
+    "sizes": [{ "label": "80mg vial", "price": 70 }],
+    "status": "available"
+  },
+  {
+    "id": "kpv",
+    "name": "KPV",
+    "categories": ["Pain & Inflammation", "Immune Support", "Healing & Recovery"],
+    "sizes": [{ "label": "10mg vial", "price": 30 }],
+    "status": "available"
+  },
+  {
+    "id": "cjc-ipa",
+    "name": "CJC / Ipamorelin (no DAC)",
+    "categories": ["Muscle Growth", "Sleep Support"],
+    "sizes": [
+      { "label": "CJC 5mg vial", "price": 30 },
+      { "label": "10mg combo vial", "price": 50 }
+    ],
+    "status": "available"
+  },
+  {
+    "id": "cjc-dac",
+    "name": "CJC-1295 (with DAC)",
+    "categories": ["Muscle Growth"],
+    "sizes": [{ "label": "5mg vial", "price": 50 }],
+    "status": "available"
+  },
+  {
+    "id": "igf-1-lr3",
+    "name": "IGF-1 LR3",
+    "categories": ["Muscle Growth"],
+    "sizes": [{ "label": "1mg vial", "price": 65 }],
+    "status": "available"
+  },
+  {
+    "id": "ipamorelin",
+    "name": "Ipamorelin",
+    "categories": ["Muscle Growth", "Sleep Support"],
+    "sizes": [{ "label": "5mg vial", "price": 15 }],
+    "status": "available"
+  },
+  {
+    "id": "sermorelin",
+    "name": "Sermorelin",
+    "categories": ["Muscle Growth", "Anti-Aging"],
+    "sizes": [{ "label": "10mg vial", "price": 50 }],
+    "status": "available"
+  },
+  {
+    "id": "nad-plus",
+    "name": "NAD+",
+    "categories": ["Energy & Performance", "Anti-Aging", "Cognitive Enhancement"],
+    "sizes": [
+      { "label": "500mg vial", "price": 30 },
+      { "label": "1000mg vial", "price": 50 }
+    ],
+    "status": "available"
+  },
+  {
+    "id": "ss-31",
+    "name": "SS-31",
+    "categories": ["Energy & Performance", "Anti-Aging"],
+    "sizes": [{ "label": "50mg vial", "price": 95 }],
+    "status": "available"
+  },
+  {
+    "id": "mots-c",
+    "name": "MOTS-c",
+    "categories": ["Energy & Performance", "Metabolic Health"],
+    "sizes": [
+      { "label": "10mg vial", "price": 15 },
+      { "label": "40mg vial", "price": 40 }
+    ],
+    "status": "available"
+  },
+  {
+    "id": "ara-290",
+    "name": "ARA-290",
+    "categories": ["Pain & Inflammation", "Healing & Recovery", "Immune Support"],
+    "sizes": [{ "label": "10mg vial", "price": 40 }],
+    "status": "available"
+  }
+]

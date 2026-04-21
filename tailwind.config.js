@@ -1,15 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,jsx}',
+    './components/**/*.{js,jsx}',
+    './app/**/*.{js,jsx}',
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        mono: ['var(--font-mono)'],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        bg:        'var(--bg)',
+        surface:   'var(--surface)',
+        'surface-2':'var(--surface-2)',
+        border:    'var(--border)',
+        'border-2':'var(--border-2)',
+        accent:    'var(--accent)',
+        primary:   'var(--primary)',
+        muted:     'var(--muted)',
+        'muted-2': 'var(--muted-2)',
+        available: 'var(--available)',
+        oos:       'var(--oos)',
       },
     },
   },

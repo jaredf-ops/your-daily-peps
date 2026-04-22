@@ -11,13 +11,13 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border">
-      <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between relative">
         <Link href="/" className="flex items-center">
           <img src="/logo-horizontal.svg" alt="DailyPep" style={{ height: '44px', width: 'auto' }} />
         </Link>
 
-        {/* Desktop nav */}
-        <nav className="hidden sm:flex items-center gap-6">
+        {/* Desktop nav — absolutely centered */}
+        <nav className="hidden sm:flex items-center gap-6 absolute left-1/2 -translate-x-1/2">
           <Link href="/catalog" className="text-sm text-muted hover:text-primary transition-colors">Catalog</Link>
           <Link href="/faq" className="text-sm text-muted hover:text-primary transition-colors">FAQ</Link>
         </nav>

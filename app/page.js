@@ -97,8 +97,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Category grid */}
+      {/* How it works */}
       <section className="py-16 border-b border-border">
+        <p className="section-label mb-10">How to order</p>
+        <div className="grid sm:grid-cols-3 gap-8">
+          {steps.map((step) => (
+            <div key={step.num}>
+              <p className="font-mono text-4xl font-bold text-border mb-4">{step.num}</p>
+              <h3 className="text-base font-semibold text-primary mb-2">{step.title}</h3>
+              <p className="text-sm text-muted leading-relaxed">{step.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Category grid */}
+      <section className="py-16">
         <p className="section-label mb-8">Browse by goal</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
           {ALL_CATEGORIES.map((cat) => {
@@ -121,31 +135,6 @@ export default function HomePage() {
               </Link>
             );
           })}
-        </div>
-      </section>
-
-      {/* How it works */}
-      <section className="py-16 border-b border-border">
-        <p className="section-label mb-10">How to order</p>
-        <div className="grid sm:grid-cols-3 gap-8">
-          {steps.map((step) => (
-            <div key={step.num}>
-              <p className="font-mono text-4xl font-bold text-border mb-4">{step.num}</p>
-              <h3 className="text-base font-semibold text-primary mb-2">{step.title}</h3>
-              <p className="text-sm text-muted leading-relaxed">{step.body}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16">
-        <div className="border border-border rounded-sm p-8 bg-surface flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-          <div>
-            <p className="text-lg font-semibold text-primary mb-1">Ready to order?</p>
-            <p className="text-sm text-muted">Dosing instructions included. Shipping is $8 flat or pick up locally.</p>
-          </div>
-          <Link href="/catalog" className="btn-primary whitespace-nowrap">Browse Catalog</Link>
         </div>
       </section>
 

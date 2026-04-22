@@ -56,18 +56,16 @@ export default function HomePage() {
 
       {/* Hero */}
       <section className="pt-20 pb-16 border-b border-border">
-        <div className="max-w-2xl">
+        <div className="text-center mx-auto">
           <p className="section-label mb-5">Research compounds — {availableCount} in stock</p>
-          <h1 className="text-5xl sm:text-6xl font-bold tracking-tight text-primary leading-[1.05] mb-6">
-            Your Daily<br />
-            <span className="text-accent">Peps.</span>
+          <h1 className="text-5xl sm:text-6xl font-bold tracking-tight leading-tight mb-6 whitespace-nowrap">
+            Your <span style={{ color: '#0f2744' }}>Daily</span><span style={{ color: '#1d6fb8' }}>Pep</span>
           </h1>
-          <p className="text-lg text-muted leading-relaxed mb-10 max-w-lg">
+          <p className="text-center text-lg text-muted leading-relaxed mb-10">
             {siteConfig.tagline} Dosing instructions included with every order.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex justify-center">
             <Link href="/catalog" className="btn-primary">Browse Catalog</Link>
-            <Link href="/order" className="btn-ghost">Place an Order</Link>
           </div>
         </div>
 
@@ -110,7 +108,7 @@ export default function HomePage() {
               <Link
                 key={cat}
                 href={`/catalog?category=${encodeURIComponent(cat)}`}
-                className="card p-4 hover:border-accent/30 hover:bg-surface-2 group cursor-pointer transition-all duration-200"
+                className="card p-4 border-l-[3px] border-l-[#1d6fb8] hover:border-accent/30 hover:bg-surface-2 group cursor-pointer transition-all duration-200"
               >
                 <div className="flex items-start justify-between mb-3">
                   <span className="text-xl text-muted group-hover:text-accent transition-colors duration-200">
@@ -147,7 +145,7 @@ export default function HomePage() {
             <p className="text-lg font-semibold text-primary mb-1">Ready to order?</p>
             <p className="text-sm text-muted">Dosing instructions included. Shipping is $8 flat or pick up locally.</p>
           </div>
-          <Link href="/order" className="btn-primary whitespace-nowrap">Order Now</Link>
+          <Link href="/catalog" className="btn-primary whitespace-nowrap">Browse Catalog</Link>
         </div>
       </section>
 

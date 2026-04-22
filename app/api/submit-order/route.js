@@ -16,6 +16,7 @@ function getResend() {
 export async function POST(req) {
   try {
     const order = await req.json();
+    const { initials, acknowledgedResearchUse } = order;
 
     // 1. Save to Supabase
     const { error: dbError } = await supabase.from('orders').insert([{
@@ -33,6 +34,9 @@ export async function POST(req) {
       extras_total:  order.extrasTotal,
       total:         order.total,
       status:        'pending',
+      initials:      initials || null,
+      acknowledged_research_use: acknowledgedResearchUse || false,
+      acknowledged_at: new Date().toISOString(),
     }]);
 
     if (dbError) {
@@ -130,7 +134,7 @@ export async function POST(req) {
         <div style="padding:24px;background:#f8f9fa;border:1px solid #e5e7eb;border-top:none;border-radius:0 0 4px 4px;">
 
           <p style="margin:0 0 20px;font-size:14px;line-height:1.5;">
-            Hi ${order.name}, thanks for your order! Here&apos;s what you ordered and how to complete your payment.
+            Hi ${order.name.split(' ')[0]}, thanks for your order! Here&apos;s what you ordered and how to complete your payment.
           </p>
 
           <h2 style="font-size:14px;color:#6b7280;margin:0 0 12px;text-transform:uppercase;letter-spacing:0.05em;">Items ordered</h2>

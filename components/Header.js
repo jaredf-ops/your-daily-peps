@@ -12,14 +12,14 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border">
       <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-        <Link href="/" className="font-mono text-sm font-bold text-primary tracking-tight">
-          YDP
+        <Link href="/" className="flex items-center">
+          <img src="/logo-horizontal.svg" alt="DailyPep" style={{ height: '44px', width: 'auto' }} />
         </Link>
 
         {/* Desktop nav */}
         <nav className="hidden sm:flex items-center gap-6">
           <Link href="/catalog" className="text-sm text-muted hover:text-primary transition-colors">Catalog</Link>
-          <Link href="/order"   className="text-sm text-muted hover:text-primary transition-colors">Order</Link>
+          <Link href="/faq" className="text-sm text-muted hover:text-primary transition-colors">FAQ</Link>
         </nav>
 
         <div className="flex items-center gap-4">
@@ -56,11 +56,11 @@ export default function Header() {
             Catalog
           </Link>
           <Link
-            href="/order"
+            href="/faq"
             onClick={() => setMenuOpen(false)}
             className="text-sm text-primary font-medium"
           >
-            Order
+            FAQ
           </Link>
         </div>
       )}

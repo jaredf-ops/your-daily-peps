@@ -65,6 +65,9 @@ export default function OrderPage() {
   const [loading,  setLoading]  = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [finalTotal, setFinalTotal] = useState(0);
+  const [initials, setInitials] = useState('');
+  const [acknowledged, setAcknowledged] = useState(false);
+  const [submitAttempted, setSubmitAttempted] = useState(false);
 
   const shippingCost  = pickup ? 0 : siteConfig.shippingFee;
   const extrasTotal   = extras.reduce((s, e) => s + e.price, 0);
@@ -112,6 +115,8 @@ export default function OrderPage() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    setSubmitAttempted(true);
+    if (!acknowledged || !initials.trim()) return;
     if (items.length === 0) return;
     setLoading(true);
     try {
@@ -135,6 +140,8 @@ export default function OrderPage() {
           shippingCost,
           extrasTotal,
           total,
+          initials,
+          acknowledgedResearchUse: true,
         }),
       });
       if (res.ok) {
@@ -380,6 +387,34 @@ export default function OrderPage() {
                 <p className="text-[10px] text-muted text-center mt-3">
                   Dosing instructions included with every order.
                 </p>
+
+                <div className={`mt-4 pt-4 border-t border-border rounded-sm p-3 transition-all duration-200 ${submitAttempted && (!acknowledged || !initials.trim()) ? 'border-2 border-red-400 bg-red-50' : 'border border-amber-200 bg-amber-50'}`}>
+                  <p className="text-[10px] text-amber-800 leading-relaxed mb-3">
+                    These compounds are for research use only, are not FDA approved, and are not intended for human consumption or use in clinical applications. By submitting you confirm you are a qualified researcher and will comply with all applicable laws.
+                  </p>
+                  <label className="flex items-start gap-2 cursor-pointer mb-3">
+                    <input
+                      type="checkbox"
+                      checked={acknowledged}
+                      onChange={(e) => setAcknowledged(e.target.checked)}
+                      className="mt-0.5 accent-accent shrink-0"
+                    />
+                    <span className="text-[10px] text-amber-900 font-medium leading-relaxed">I understand these compounds are for research use only.</span>
+                  </label>
+                  <div>
+                    <label className="text-[10px] text-muted block mb-1">Initials *</label>
+                    <input
+                      value={initials}
+                      onChange={(e) => setInitials(e.target.value.toUpperCase().slice(0, 4))}
+                      placeholder="JF"
+                      maxLength={4}
+                      className={`w-20 text-center font-mono tracking-widest text-sm px-2 py-1.5 border rounded-sm focus:outline-none transition-colors ${submitAttempted && !initials.trim() ? 'border-red-400 bg-red-50' : 'border-border focus:border-accent'}`}
+                    />
+                  </div>
+                  {submitAttempted && (!acknowledged || !initials.trim()) && (
+                    <p className="text-[10px] text-red-500 mt-2 font-medium">Please check the box and enter your initials to continue.</p>
+                  )}
+                </div>
               </div>
             </div>
 

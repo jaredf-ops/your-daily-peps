@@ -13,7 +13,7 @@ export default function Footer() {
           <nav className="flex items-center gap-6">
             <Link href="/"        className="text-xs text-muted hover:text-primary transition-colors">Home</Link>
             <Link href="/catalog" className="text-xs text-muted hover:text-primary transition-colors">Catalog</Link>
-            <Link href="/order"   className="text-xs text-muted hover:text-primary transition-colors">Order</Link>
+            <Link href="/faq"     className="text-xs text-muted hover:text-primary transition-colors">FAQ</Link>
           </nav>
         </div>
         <div className="border-t border-border pt-6">

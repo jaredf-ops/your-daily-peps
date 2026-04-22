@@ -41,7 +41,7 @@ function ProductCard({ product, onViewDetails }) {
   }
 
   return (
-    <div className={`card p-5 flex flex-col gap-4 transition-all duration-200 ${available ? 'hover:border-accent/30 hover:bg-surface-2' : 'opacity-50'}`}>
+    <div className={`card p-5 flex flex-col gap-4 border-t-[3px] border-t-[#1d6fb8] transition-all duration-200 ${available ? 'hover:border-accent/30 hover:bg-surface-2' : 'opacity-50'}`}>
 
       {/* Name + categories */}
       <div>
@@ -90,7 +90,7 @@ function ProductCard({ product, onViewDetails }) {
         <div className="flex items-center gap-3">
           <button
             onClick={() => onViewDetails(product)}
-            className="text-xs text-muted hover:text-primary transition-colors underline underline-offset-2"
+            className="text-xs text-[#374151] font-medium hover:text-primary transition-colors underline underline-offset-2"
           >
             Details
           </button>

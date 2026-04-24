@@ -385,7 +385,7 @@ export default function OrderPage() {
                 </button>
 
                 <p className="text-[10px] text-muted text-center mt-3">
-                  Dosing instructions included with every order.
+                  For laboratory research use only.
                 </p>
 
                 <div className={`mt-4 pt-4 border-t border-border rounded-sm p-3 transition-all duration-200 ${submitAttempted && (!acknowledged || !initials.trim()) ? 'border-2 border-red-400 bg-red-50' : 'border border-amber-200 bg-amber-50'}`}>

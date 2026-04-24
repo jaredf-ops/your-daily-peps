@@ -7,25 +7,23 @@ import { useCart } from '@/context/CartContext';
 import ProductDetailPanel from '@/components/ProductDetailPanel';
 
 const ALL_CATEGORIES = [
-  'Weight Management','Metabolic Health','Healing & Recovery',
-  'Pain & Inflammation','Anti-Aging','Sleep Support',
-  'Cognitive Enhancement','Libido & Sexual Health','Immune Support',
-  'Skin & Beauty','Muscle Growth','Energy & Performance',
+  'GLP-1 & Metabolic Analogs','Growth Hormone Peptides','Tissue Repair Peptides',
+  'Anti-Inflammatory Peptides','Longevity Research Peptides','Neurological Peptides',
+  'Melanocortin Peptides','Immunomodulatory Peptides','Dermatological Peptides',
+  'Mitochondrial Peptides',
 ];
 
 const categoryColors = {
-  'Weight Management':     'border-blue-200 text-blue-600',
-  'Metabolic Health':      'border-teal-200 text-teal-600',
-  'Healing & Recovery':    'border-green-200 text-green-600',
-  'Pain & Inflammation':   'border-orange-200 text-orange-600',
-  'Anti-Aging':            'border-purple-200 text-purple-600',
-  'Sleep Support':         'border-indigo-200 text-indigo-600',
-  'Cognitive Enhancement': 'border-yellow-200 text-yellow-700',
-  'Libido & Sexual Health':'border-rose-200 text-rose-600',
-  'Immune Support':        'border-cyan-200 text-cyan-600',
-  'Skin & Beauty':         'border-pink-200 text-pink-600',
-  'Muscle Growth':         'border-red-200 text-red-600',
-  'Energy & Performance':  'border-amber-200 text-amber-700',
+  'GLP-1 & Metabolic Analogs':    'border-blue-200 text-blue-600',
+  'Growth Hormone Peptides':       'border-teal-200 text-teal-600',
+  'Tissue Repair Peptides':        'border-green-200 text-green-600',
+  'Anti-Inflammatory Peptides':    'border-orange-200 text-orange-600',
+  'Longevity Research Peptides':   'border-purple-200 text-purple-600',
+  'Neurological Peptides':         'border-indigo-200 text-indigo-600',
+  'Melanocortin Peptides':         'border-rose-200 text-rose-600',
+  'Immunomodulatory Peptides':     'border-cyan-200 text-cyan-600',
+  'Dermatological Peptides':       'border-pink-200 text-pink-600',
+  'Mitochondrial Peptides':        'border-amber-200 text-amber-700',
 };
 
 function ProductCard({ product, onViewDetails }) {
@@ -141,7 +139,7 @@ function CatalogContent() {
           <span className="text-amber-500 text-sm mt-0.5">⚠</span>
           <p className="text-xs text-amber-800 leading-relaxed">
             <span className="font-semibold uppercase tracking-wide text-[10px] mr-2">Research Use Only</span>
-            All products are intended for research purposes only and are not approved by the FDA for human use.
+            All products are sold strictly for laboratory research purposes only. Not for human or animal consumption. Not FDA approved. Not intended to diagnose, treat, cure, or prevent any disease.
           </p>
         </div>
 

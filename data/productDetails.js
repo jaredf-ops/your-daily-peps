@@ -12,7 +12,7 @@ const productDetails = {
       'Targets fat metabolism at the cellular level',
       'Raises NAD+ without IV administration',
       'Non-stimulant mechanism — no jitters or crash',
-      'Useful for long-term metabolic research protocols',
+      'Studied in long-term metabolic research models',
     ],
   },
 
@@ -27,7 +27,7 @@ const productDetails = {
       'Rapid, targeted fat reduction in research models',
       'Novel mechanism distinct from GLP-1 or stimulant-based compounds',
       'Well-studied in primate models with significant fat loss results',
-      'May complement other weight management peptides',
+      'Studied alongside other metabolic research compounds',
     ],
   },
 
@@ -41,9 +41,9 @@ const productDetails = {
     whyChoose: [
       'Human clinical trial data available',
       'No effect on blood sugar or insulin sensitivity',
-      'Isolated fat-loss mechanism from GH without anabolic effects',
+      'Isolated lipolytic mechanism without anabolic activity',
       'Well-tolerated with a strong safety profile',
-      'Available in two vial sizes for flexible dosing',
+      'Available in two vial sizes',
     ],
   },
 
@@ -55,7 +55,7 @@ const productDetails = {
       { title: 'Complementary to GLP-1', body: 'Works through different receptors than GLP-1 agonists, making the combination of cagrilintide + semaglutide produce additive weight loss in studies.' },
     ],
     whyChoose: [
-      'Once-weekly dosing convenience',
+      'Extended half-life supports infrequent administration',
       'Synergistic with GLP-1 agonists like semaglutide or tirzepatide',
       'Reduces appetite through a different pathway than GLP-1 analogs',
       'Strong clinical development data from Novo Nordisk trials',
@@ -93,7 +93,7 @@ const productDetails = {
   },
 
   'tesamorelin': {
-    overview: 'A synthetic GHRH analog approved by the FDA for HIV-associated lipodystrophy. Specifically targets visceral (abdominal) fat while preserving lean muscle mass, making it unique among weight management peptides.',
+    overview: 'A synthetic GHRH analog approved by the FDA for HIV-associated lipodystrophy. Specifically targets visceral (abdominal) fat while preserving lean muscle mass, making it a studied GHRH analog in adipose tissue research.',
     howItWorks: [
       { title: 'GHRH Mimicry', body: 'Stimulates the pituitary to release growth hormone in a pulsatile, physiologically normal pattern, avoiding the side effects of direct GH administration.' },
       { title: 'Visceral Fat Targeting', body: 'GH released by tesamorelin preferentially mobilizes visceral abdominal fat — the metabolically dangerous fat surrounding organs.' },
@@ -102,9 +102,9 @@ const productDetails = {
     whyChoose: [
       'FDA-approved compound with extensive clinical data',
       'Specifically targets visceral fat, not just subcutaneous',
-      'Preserves lean muscle while reducing fat',
+      'Associated with lean mass preservation alongside adipose tissue reduction in research models',
       'Pulsatile GH release avoids continuous elevation side effects',
-      'Available in two sizes for protocol flexibility',
+      'Available in two sizes',
     ],
   },
 
@@ -116,11 +116,11 @@ const productDetails = {
       { title: 'Insulin Sensitization', body: 'GIP activation improves how efficiently the body uses insulin, improving metabolic health beyond just weight loss.' },
     ],
     whyChoose: [
-      'Clinically proven up to 22% body weight reduction',
+      'Up to 22% body weight reduction observed in Phase 3 clinical trials',
       'Dual mechanism outperforms GLP-1-only compounds',
       'Improves blood sugar and metabolic markers alongside weight',
       'Extensive phase 3 trial safety data',
-      'Available in two sizes for different protocol stages',
+      'Available in two sizes',
     ],
   },
 
@@ -137,7 +137,7 @@ const productDetails = {
       'Effective for muscle, tendon, ligament, bone, and gut',
       'Both local and systemic administration routes studied',
       'No serious adverse effects reported across extensive research',
-      'Available in two sizes for short or extended protocols',
+      'Available in two sizes',
     ],
   },
 
@@ -150,8 +150,8 @@ const productDetails = {
       { title: 'Anti-Inflammatory', body: 'Reduces pro-inflammatory cytokines at injury sites, decreasing pain and swelling while enabling the regenerative phase of healing.' },
     ],
     whyChoose: [
-      'Systemic healing reach — works throughout the body from one injection',
-      'Reduces scar tissue compared to natural healing',
+      'Systemic distribution via bloodstream following single administration',
+      'Associated with reduced fibrotic response in tissue repair models',
       'Complements BPC-157 through different healing pathways',
       'Strong safety data from extensive research',
       'Available in two sizes',
@@ -169,7 +169,7 @@ const productDetails = {
       'Combines two proven healing peptides in one vial',
       'Eliminates the need to source and mix separately',
       'Complementary mechanisms provide broader healing coverage',
-      'Convenient for travel or simplified protocols',
+      'Convenient pre-combined formulation',
       'Cost-effective compared to buying BPC-157 and TB-500 separately',
     ],
   },
@@ -185,7 +185,7 @@ const productDetails = {
     whyChoose: [
       'Decades of Russian clinical research behind it',
       'Directly targets telomere shortening — a root cause of aging',
-      'Improves sleep quality alongside anti-aging effects',
+      'Associated with melatonin regulation alongside telomerase research',
       'Available in two sizes including a large 50mg research vial',
       'Non-toxic and well-tolerated in long-term studies',
     ],
@@ -220,7 +220,7 @@ const productDetails = {
       'The body\'s own primary antioxidant system',
       'Declines significantly with age and oxidative stress',
       'Supports liver, immune, and cellular health simultaneously',
-      'Injectable form bypasses oral bioavailability limitations',
+      'Administered parenterally for direct systemic delivery',
       'Well-tolerated with decades of clinical use',
     ],
   },
@@ -235,7 +235,7 @@ const productDetails = {
     ],
     whyChoose: [
       'Works at the top of the hormonal cascade for comprehensive effect',
-      'Studied for both libido and fertility applications',
+      'Studied in HPG axis and reproductive endocrinology research',
       'Natural signaling molecule, not a synthetic hormone',
       'Useful for research into HPG axis dysfunction',
       'Produces LH/FSH without directly supplying exogenous hormones',
@@ -250,9 +250,9 @@ const productDetails = {
       { title: 'Appetite Suppression', body: 'MC3R and MC4R activation reduces hunger signals, contributing to weight management effects seen in research.' },
     ],
     whyChoose: [
-      'Multi-receptor action provides tanning, libido, and appetite effects',
+      'Multi-receptor activation across MC1R, MC3R, and MC4R pathways',
       'Well-studied across decades of research',
-      'Faster pigmentation than Melanotan 1 with additional sexual health benefits',
+      'Broader receptor activation profile than Melanotan 1',
       'One of the most requested research peptides globally',
     ],
   },
@@ -268,8 +268,8 @@ const productDetails = {
     whyChoose: [
       'Naturally occurring hormone with extensive human research',
       'Multiple administration routes studied (intranasal most common)',
-      'Improves both relationship and sexual health parameters',
-      'Reduces anxiety without sedation or dependence risk',
+      'Studied for central oxytocin receptor modulation in behavioral research models',
+      'Modulates amygdala activity without sedation in research models',
       'Well-tolerated with short duration of action',
     ],
   },
@@ -283,9 +283,9 @@ const productDetails = {
     ],
     whyChoose: [
       'FDA-approved for hypoactive sexual desire disorder (HSDD) in women',
-      'Works in both men and women through a central mechanism',
+      'Studied in male and female research models through a central mechanism',
       'Effective regardless of hormonal or vascular status',
-      'Rapid onset with predictable dosing',
+      'Rapid onset following administration',
       'Extensive clinical trial safety and efficacy data',
     ],
   },
@@ -299,9 +299,9 @@ const productDetails = {
       { title: 'Antioxidant Effects', body: 'Has antioxidant properties that protect against oxidative stress, providing systemic benefits beyond sleep induction.' },
     ],
     whyChoose: [
-      'Specifically targets deep sleep quality, not just sleep onset',
-      'Reduces cortisol — a major driver of poor sleep',
-      'Non-sedating mechanism — no next-day grogginess',
+      'Studied for effects on delta-wave sleep architecture',
+      'Associated with cortisol modulation in sleep research',
+      'Non-sedating mechanism in research models',
       'Addresses both the neurological and hormonal components of sleep',
       'Available in two sizes',
     ],
@@ -332,10 +332,10 @@ const productDetails = {
       { title: 'Non-Sedating', body: 'Reduces anxiety while maintaining alertness and cognitive function — unlike benzodiazepines which impair both.' },
     ],
     whyChoose: [
-      'Reduces anxiety without sedation or cognitive impairment',
-      'No dependence or withdrawal — unlike benzodiazepines',
+      'Modulates anxiety-related pathways without sedation in research models',
+      'Non-habit forming in research models',
       'Approved medication in Russia with extensive clinical use',
-      'Improves memory and learning alongside anxiety reduction',
+      'Associated with BDNF upregulation and enhanced neuroplasticity in research models',
       'Available in two sizes',
     ],
   },
@@ -349,9 +349,9 @@ const productDetails = {
       { title: 'Attention Enhancement', body: 'Specifically enhances the brain\'s attention networks, improving focus and mental clarity within 15-30 minutes of intranasal administration.' },
     ],
     whyChoose: [
-      'One of the most potent nootropic peptides available',
+      'One of the most studied neuropeptides for BDNF elevation',
       'Approved in Russia for stroke recovery — real clinical data',
-      'Non-stimulant: enhances cognition without jitters or crash',
+      'Non-stimulant mechanism',
       'Rapid onset via intranasal route',
       'Available in two sizes',
     ],
@@ -420,7 +420,7 @@ const productDetails = {
       'Effective both topically for skin and systemically via injection',
       'Naturally occurring — addresses an age-related deficiency',
       'Decades of cosmetic and injectable research',
-      'Visible skin improvements typically within 4-8 weeks',
+      'Studied for collagen and elastin modulation in dermatological research',
       'One of the most broadly researched anti-aging peptides available',
     ],
   },
@@ -449,9 +449,9 @@ const productDetails = {
     ],
     whyChoose: [
       '30% more effective than Argireline (SNAP-7) in studies',
-      'Non-invasive alternative to botulinum toxin injections',
+      'Non-paralytic research compound',
       'Topical application possible — no needles required',
-      'Natural facial expression maintained unlike Botox paralysis',
+      'Non-paralytic mechanism preserves full neuromuscular activity',
       'Excellent safety profile in cosmetic research',
     ],
   },
@@ -483,7 +483,7 @@ const productDetails = {
       'Four proven peptides combined in one convenient vial',
       'Covers local healing, systemic healing, skin, and inflammation simultaneously',
       'Cost-effective versus sourcing all four separately',
-      'Versatile for injury recovery, anti-aging, gut health, and general wellness',
+      'Versatile multi-pathway research formulation',
     ],
   },
 
@@ -510,7 +510,7 @@ const productDetails = {
       { title: 'Dual-Pathway Synergy', body: 'CJC-1295 activates GHRH receptors while Ipamorelin activates ghrelin receptors — triggering GH release from two different pathways simultaneously.' },
       { title: 'Amplified GH Pulses', body: 'The combined stimulation produces GH pulses 3-10x larger than either peptide alone, while maintaining the natural pulsatile pattern.' },
       { title: 'Clean Hormone Profile', body: 'Ipamorelin does not elevate cortisol or prolactin, keeping GH stimulation clean and free of stress hormone side effects.' },
-      { title: 'Flexible Timing', body: 'Short half-life allows strategic 1-3x daily dosing — at bedtime for recovery, post-workout for growth, or both.' },
+      { title: 'Flexible Timing', body: 'Short half-life maintains pulsatile GH secretion pattern.' },
     ],
     whyChoose: [
       'Most widely used and researched GH peptide combination',
@@ -529,10 +529,10 @@ const productDetails = {
       { title: 'IGF-1 Elevation', body: 'Sustained GH release produces consistently elevated IGF-1, providing continuous anabolic and regenerative signaling rather than peaks and valleys.' },
     ],
     whyChoose: [
-      'Twice-weekly dosing — maximum protocol convenience',
+      'Extended half-life supports infrequent administration',
       'Sustained IGF-1 elevation without multiple daily injections',
       'Strong track record in long-term research protocols',
-      'Ideal for subjects who cannot manage daily dosing schedules',
+      'Studied in subjects requiring extended-duration administration protocols',
     ],
   },
 
@@ -545,11 +545,11 @@ const productDetails = {
       { title: 'Nutrient Partitioning', body: 'Improves glucose uptake in muscle and may enhance how the body uses nutrients for muscle growth rather than fat storage.' },
     ],
     whyChoose: [
-      'Direct anabolic signaling without GH conversion step',
-      '20-30 hour half-life allows once-daily dosing',
+      'Direct IGF-1 receptor activation without GH conversion',
+      '20-30 hour half-life',
       'More potent than natural IGF-1 with greater bioavailability',
-      'Synergistic with GH secretagogues for maximum anabolic effect',
-      'One of the most potent peptides for muscle hypertrophy research',
+      'Studied in combination with GH secretagogues',
+      'One of the most studied IGF-1 pathway agonists in skeletal muscle research',
     ],
   },
 
@@ -562,10 +562,10 @@ const productDetails = {
     ],
     whyChoose: [
       'Cleanest side effect profile of any GH secretagogue',
-      'No hunger stimulation, no cortisol — ideal for body composition research',
+      'No hunger stimulation or cortisol elevation observed in research models',
       'Works synergistically with CJC-1295 for amplified GH pulses',
       'Excellent long-term tolerability with minimal receptor desensitization',
-      'Enhances deep sleep when dosed before bed',
+      'Associated with deep sleep stage research in pre-sleep administration timing protocols',
     ],
   },
 
@@ -580,8 +580,8 @@ const productDetails = {
       'FDA-approved compound with strong clinical validation',
       'Works with natural regulatory feedback — cannot overshoot GH levels',
       'Preserves pituitary function unlike exogenous GH',
-      'Cost-effective alternative to prescription human growth hormone',
-      'Particularly effective when dosed before sleep to amplify natural GH pulse',
+      'Studied as a GHRH-receptor agonist alternative to exogenous GH',
+      'Compatible with pre-sleep timing protocols in GH pulse research',
     ],
   },
 
@@ -595,8 +595,8 @@ const productDetails = {
     ],
     whyChoose: [
       'Direct NAD+ bypasses conversion pathways required by oral precursors (NMN, NR)',
-      'Upstream of multiple longevity pathways — one molecule, many benefits',
-      'Immediate energy and cognitive improvements reported within hours',
+      'Upstream of multiple longevity-associated signaling pathways',
+      'Rapid restoration of cellular NAD+ levels observed in research settings',
       'Strong evidence linking NAD+ decline to aging across multiple organ systems',
       'Available in 500mg and 1000mg sizes',
     ],
@@ -615,7 +615,7 @@ const productDetails = {
       'Addresses mitochondrial dysfunction — a hallmark of aging and disease',
       'Clinical trial data in heart failure and ischemia-reperfusion injury',
       'Benefits extend across all tissues that depend on mitochondrial energy',
-      'May enhance endurance and reduce fatigue through ATP optimization',
+      'May influence endurance parameters through ATP output modulation in research models',
     ],
   },
 
@@ -629,8 +629,8 @@ const productDetails = {
     ],
     whyChoose: [
       'Unique mitochondria-to-nucleus communication molecule',
-      'Improves exercise capacity and endurance in studies',
-      'Restores metabolic flexibility often lost with age',
+      'Associated with endurance parameter changes in preclinical studies',
+      'Studied in age-related metabolic flexibility research models',
       'Affordable entry point for mitochondrial health research',
       'Available in two sizes (10mg and 40mg)',
     ],
@@ -646,7 +646,7 @@ const productDetails = {
     ],
     whyChoose: [
       'EPO\'s healing benefits without blood-thickening cardiovascular risks',
-      'Clinical trial data in diabetic neuropathy with significant pain reduction',
+      'Clinical trial data in diabetic neuropathy models',
       'Persistent effects that continue after the treatment period',
       'Unique innate repair receptor mechanism not targeted by other peptides',
       'Well-tolerated even in vulnerable populations',

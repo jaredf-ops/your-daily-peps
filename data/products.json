@@ -2,7 +2,7 @@
   {
     "id": "5-amino-1mq",
     "name": "5-Amino-1MQ",
-    "categories": ["Weight Management", "Metabolic Health"],
+    "categories": ["GLP-1 & Metabolic Analogs"],
     "sizes": [
       { "label": "500mg / 30 capsules", "price": 55 },
       { "label": "1000mg / 30 capsules", "price": 75 }
@@ -12,14 +12,14 @@
   {
     "id": "adipotide",
     "name": "Adipotide",
-    "categories": ["Weight Management"],
+    "categories": ["GLP-1 & Metabolic Analogs"],
     "sizes": [{ "label": "5mg vial", "price": 75 }],
     "status": "available"
   },
   {
     "id": "aod-9604",
     "name": "AOD-9604",
-    "categories": ["Weight Management", "Metabolic Health"],
+    "categories": ["Growth Hormone Peptides", "GLP-1 & Metabolic Analogs"],
     "sizes": [
       { "label": "5mg vial", "price": 30 },
       { "label": "10mg vial", "price": 50 }
@@ -29,28 +29,28 @@
   {
     "id": "cagrilintide",
     "name": "Cagrilintide",
-    "categories": ["Weight Management", "Metabolic Health"],
+    "categories": ["GLP-1 & Metabolic Analogs"],
     "sizes": [{ "label": "5mg vial", "price": 60 }],
     "status": "available"
   },
   {
     "id": "lc-216",
     "name": "LC216",
-    "categories": ["Weight Management", "Metabolic Health"],
+    "categories": ["GLP-1 & Metabolic Analogs"],
     "sizes": [{ "label": "5mg vial", "price": 65 }],
     "status": "available"
   },
   {
     "id": "retatrutide",
     "name": "Retatrutide",
-    "categories": ["Weight Management", "Metabolic Health"],
+    "categories": ["GLP-1 & Metabolic Analogs"],
     "sizes": [{ "label": "10mg vial", "price": 50 }],
     "status": "available"
   },
   {
     "id": "tesamorelin",
     "name": "Tesamorelin",
-    "categories": ["Weight Management", "Metabolic Health"],
+    "categories": ["Growth Hormone Peptides"],
     "sizes": [
       { "label": "5mg vial", "price": 50 },
       { "label": "10mg vial", "price": 95 }
@@ -60,7 +60,7 @@
   {
     "id": "tirzepatide",
     "name": "Tirzepatide",
-    "categories": ["Weight Management", "Metabolic Health"],
+    "categories": ["GLP-1 & Metabolic Analogs"],
     "sizes": [
       { "label": "5mg vial", "price": 40 },
       { "label": "10mg vial", "price": 70 }
@@ -70,7 +70,7 @@
   {
     "id": "bpc-157",
     "name": "BPC-157",
-    "categories": ["Healing & Recovery", "Pain & Inflammation"],
+    "categories": ["Tissue Repair Peptides", "Anti-Inflammatory Peptides"],
     "sizes": [
       { "label": "5mg vial", "price": 40 },
       { "label": "10mg vial", "price": 65 }
@@ -80,7 +80,7 @@
   {
     "id": "tb-500",
     "name": "TB-500",
-    "categories": ["Healing & Recovery"],
+    "categories": ["Tissue Repair Peptides"],
     "sizes": [
       { "label": "5mg vial", "price": 45 },
       { "label": "10mg vial", "price": 75 }
@@ -90,14 +90,14 @@
   {
     "id": "wolverine",
     "name": "Wolverine",
-    "categories": ["Healing & Recovery"],
+    "categories": ["Tissue Repair Peptides"],
     "sizes": [{ "label": "10mg combo vial", "price": 75 }],
     "status": "available"
   },
   {
     "id": "epithalon",
     "name": "Epithalon",
-    "categories": ["Anti-Aging"],
+    "categories": ["Longevity Research Peptides"],
     "sizes": [
       { "label": "10mg vial", "price": 30 },
       { "label": "50mg vial", "price": 120 }
@@ -107,49 +107,49 @@
   {
     "id": "fox04",
     "name": "FOX04-DRI",
-    "categories": ["Anti-Aging"],
+    "categories": ["Longevity Research Peptides"],
     "sizes": [{ "label": "5mg vial", "price": 80 }],
     "status": "available"
   },
   {
     "id": "glutathione",
     "name": "Glutathione",
-    "categories": ["Immune Support", "Anti-Aging"],
+    "categories": ["Immunomodulatory Peptides", "Longevity Research Peptides"],
     "sizes": [{ "label": "600mg vial", "price": 30 }],
     "status": "available"
   },
   {
     "id": "kisspeptin",
     "name": "Kisspeptin-10",
-    "categories": ["Libido & Sexual Health"],
+    "categories": ["Melanocortin Peptides"],
     "sizes": [{ "label": "10mg vial", "price": 50 }],
     "status": "available"
   },
   {
     "id": "melanotan-2",
     "name": "Melanotan 2",
-    "categories": ["Libido & Sexual Health", "Skin & Beauty"],
+    "categories": ["Melanocortin Peptides", "Dermatological Peptides"],
     "sizes": [{ "label": "10mg vial", "price": 40 }],
     "status": "available"
   },
   {
     "id": "oxytocin",
     "name": "Oxytocin",
-    "categories": ["Libido & Sexual Health"],
+    "categories": ["Neurological Peptides"],
     "sizes": [{ "label": "10mg vial", "price": 25 }],
     "status": "available"
   },
   {
     "id": "pt-141",
     "name": "PT-141",
-    "categories": ["Libido & Sexual Health"],
+    "categories": ["Melanocortin Peptides"],
     "sizes": [{ "label": "10mg vial", "price": 50 }],
     "status": "available"
   },
   {
     "id": "dsip",
     "name": "DSIP",
-    "categories": ["Sleep Support"],
+    "categories": ["Neurological Peptides"],
     "sizes": [
       { "label": "5mg vial", "price": 35 },
       { "label": "10mg vial", "price": 55 }
@@ -159,14 +159,14 @@
   {
     "id": "cerebrolysin",
     "name": "Cerebrolysin",
-    "categories": ["Cognitive Enhancement"],
+    "categories": ["Neurological Peptides"],
     "sizes": [{ "label": "10ml vial", "price": 50 }],
     "status": "out-of-stock"
   },
   {
     "id": "selank",
     "name": "Selank",
-    "categories": ["Cognitive Enhancement"],
+    "categories": ["Neurological Peptides"],
     "sizes": [
       { "label": "5mg vial", "price": 25 },
       { "label": "10mg vial", "price": 40 }
@@ -176,7 +176,7 @@
   {
     "id": "semax",
     "name": "Semax",
-    "categories": ["Cognitive Enhancement"],
+    "categories": ["Neurological Peptides"],
     "sizes": [
       { "label": "5mg vial", "price": 25 },
       { "label": "10mg vial", "price": 40 }
@@ -186,14 +186,14 @@
   {
     "id": "ll-37",
     "name": "LL-37",
-    "categories": ["Immune Support"],
+    "categories": ["Immunomodulatory Peptides"],
     "sizes": [{ "label": "5mg vial", "price": 35 }],
     "status": "available"
   },
   {
     "id": "thymosin-alpha-1",
     "name": "Thymosin Alpha-1",
-    "categories": ["Immune Support"],
+    "categories": ["Immunomodulatory Peptides"],
     "sizes": [
       { "label": "5mg vial", "price": 25 },
       { "label": "10mg vial", "price": 40 }
@@ -203,56 +203,56 @@
   {
     "id": "vip",
     "name": "VIP",
-    "categories": ["Immune Support", "Pain & Inflammation"],
+    "categories": ["Immunomodulatory Peptides", "Anti-Inflammatory Peptides"],
     "sizes": [{ "label": "10mg vial", "price": 50 }],
     "status": "available"
   },
   {
     "id": "ghk-cu",
     "name": "GHK-Cu",
-    "categories": ["Skin & Beauty", "Anti-Aging", "Healing & Recovery"],
+    "categories": ["Dermatological Peptides", "Tissue Repair Peptides"],
     "sizes": [{ "label": "100mg vial", "price": 55 }],
     "status": "available"
   },
   {
     "id": "melanotan-1",
     "name": "Melanotan 1",
-    "categories": ["Skin & Beauty"],
+    "categories": ["Melanocortin Peptides", "Dermatological Peptides"],
     "sizes": [{ "label": "10mg vial", "price": 50 }],
     "status": "available"
   },
   {
     "id": "snap-8",
     "name": "SNAP-8",
-    "categories": ["Skin & Beauty", "Anti-Aging"],
+    "categories": ["Dermatological Peptides"],
     "sizes": [{ "label": "10mg vial", "price": 30 }],
     "status": "available"
   },
   {
     "id": "glow",
     "name": "Glow",
-    "categories": ["Skin & Beauty"],
+    "categories": ["Dermatological Peptides"],
     "sizes": [{ "label": "Contact for pricing", "price": 0 }],
     "status": "out-of-stock"
   },
   {
     "id": "klow",
     "name": "Klow",
-    "categories": ["Healing & Recovery", "Anti-Aging", "Skin & Beauty"],
+    "categories": ["Tissue Repair Peptides", "Longevity Research Peptides"],
     "sizes": [{ "label": "80mg vial", "price": 70 }],
     "status": "available"
   },
   {
     "id": "kpv",
     "name": "KPV",
-    "categories": ["Pain & Inflammation", "Immune Support", "Healing & Recovery"],
+    "categories": ["Anti-Inflammatory Peptides", "Immunomodulatory Peptides"],
     "sizes": [{ "label": "10mg vial", "price": 30 }],
     "status": "available"
   },
   {
     "id": "cjc-ipa",
     "name": "CJC / Ipamorelin (no DAC)",
-    "categories": ["Muscle Growth", "Sleep Support"],
+    "categories": ["Growth Hormone Peptides"],
     "sizes": [
       { "label": "CJC 5mg vial", "price": 30 },
       { "label": "10mg combo vial", "price": 50 }
@@ -262,35 +262,35 @@
   {
     "id": "cjc-dac",
     "name": "CJC-1295 (with DAC)",
-    "categories": ["Muscle Growth"],
+    "categories": ["Growth Hormone Peptides"],
     "sizes": [{ "label": "5mg vial", "price": 50 }],
     "status": "available"
   },
   {
     "id": "igf-1-lr3",
     "name": "IGF-1 LR3",
-    "categories": ["Muscle Growth"],
+    "categories": ["Growth Hormone Peptides"],
     "sizes": [{ "label": "1mg vial", "price": 65 }],
     "status": "available"
   },
   {
     "id": "ipamorelin",
     "name": "Ipamorelin",
-    "categories": ["Muscle Growth", "Sleep Support"],
+    "categories": ["Growth Hormone Peptides"],
     "sizes": [{ "label": "5mg vial", "price": 15 }],
     "status": "available"
   },
   {
     "id": "sermorelin",
     "name": "Sermorelin",
-    "categories": ["Muscle Growth", "Anti-Aging"],
+    "categories": ["Growth Hormone Peptides"],
     "sizes": [{ "label": "10mg vial", "price": 50 }],
     "status": "available"
   },
   {
     "id": "nad-plus",
     "name": "NAD+",
-    "categories": ["Energy & Performance", "Anti-Aging", "Cognitive Enhancement"],
+    "categories": ["Mitochondrial Peptides", "Longevity Research Peptides"],
     "sizes": [
       { "label": "500mg vial", "price": 30 },
       { "label": "1000mg vial", "price": 50 }
@@ -300,14 +300,14 @@
   {
     "id": "ss-31",
     "name": "SS-31",
-    "categories": ["Energy & Performance", "Anti-Aging"],
+    "categories": ["Mitochondrial Peptides"],
     "sizes": [{ "label": "50mg vial", "price": 95 }],
     "status": "available"
   },
   {
     "id": "mots-c",
     "name": "MOTS-c",
-    "categories": ["Energy & Performance", "Metabolic Health"],
+    "categories": ["Mitochondrial Peptides"],
     "sizes": [
       { "label": "10mg vial", "price": 15 },
       { "label": "40mg vial", "price": 40 }
@@ -317,7 +317,7 @@
   {
     "id": "ara-290",
     "name": "ARA-290",
-    "categories": ["Pain & Inflammation", "Healing & Recovery", "Immune Support"],
+    "categories": ["Anti-Inflammatory Peptides", "Tissue Repair Peptides"],
     "sizes": [{ "label": "10mg vial", "price": 40 }],
     "status": "available"
   }

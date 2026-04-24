@@ -3,25 +3,23 @@ import products from '@/data/products.json';
 import siteConfig from '@/lib/siteConfig';
 
 const ALL_CATEGORIES = [
-  'Weight Management','Metabolic Health','Healing & Recovery',
-  'Pain & Inflammation','Anti-Aging','Sleep Support',
-  'Cognitive Enhancement','Libido & Sexual Health','Immune Support',
-  'Skin & Beauty','Muscle Growth','Energy & Performance',
+  'GLP-1 & Metabolic Analogs','Growth Hormone Peptides','Tissue Repair Peptides',
+  'Anti-Inflammatory Peptides','Longevity Research Peptides','Neurological Peptides',
+  'Melanocortin Peptides','Immunomodulatory Peptides','Dermatological Peptides',
+  'Mitochondrial Peptides',
 ];
 
 const categoryMeta = {
-  'Weight Management':     { icon: '⚖', description: 'Fat loss, GLP-1 analogs, metabolism modulation' },
-  'Metabolic Health':      { icon: '◈', description: 'Insulin sensitivity, mitochondrial support' },
-  'Healing & Recovery':    { icon: '✦', description: 'Tissue repair, injury recovery, joint health' },
-  'Pain & Inflammation':   { icon: '◎', description: 'Anti-inflammatory, neuroprotective compounds' },
-  'Anti-Aging':            { icon: '◐', description: 'Telomere support, cellular longevity peptides' },
-  'Sleep Support':         { icon: '☽', description: 'Deep sleep induction, circadian regulation' },
-  'Cognitive Enhancement': { icon: '◉', description: 'Focus, memory, neuroprotection, mood' },
-  'Libido & Sexual Health':{ icon: '♦', description: 'Hormonal balance, sexual function, drive' },
-  'Immune Support':        { icon: '◫', description: 'Innate immunity, thymic peptides, antiviral' },
-  'Skin & Beauty':         { icon: '◆', description: 'Collagen synthesis, anti-wrinkle, skin repair' },
-  'Muscle Growth':         { icon: '▲', description: 'GH secretagogues, IGF-1 axis, lean mass' },
-  'Energy & Performance':  { icon: '◇', description: 'Mitochondrial, endurance, cellular energy' },
+  'GLP-1 & Metabolic Analogs':    { icon: '◈', description: 'GLP-1 receptor agonists, amylin analogs, and metabolic signaling compounds' },
+  'Growth Hormone Peptides':       { icon: '▲', description: 'GHRH analogs, ghrelin mimetics, and GH axis secretagogues' },
+  'Tissue Repair Peptides':        { icon: '✦', description: 'Angiogenic and regenerative peptides studied in wound and connective tissue models' },
+  'Anti-Inflammatory Peptides':    { icon: '◎', description: 'NF-kB modulators and cytokine-regulating research compounds' },
+  'Longevity Research Peptides':   { icon: '◐', description: 'Telomerase activators, senolytics, and cellular aging research compounds' },
+  'Neurological Peptides':         { icon: '◉', description: 'Neuropeptides studied in CNS signaling, neurotrophic factor expression, and sleep research' },
+  'Melanocortin Peptides':         { icon: '◆', description: 'Synthetic melanocortin receptor agonists studied in pigmentation and HPG axis research' },
+  'Immunomodulatory Peptides':     { icon: '◫', description: 'Peptides studied in immune regulation, T-cell function, and antimicrobial activity' },
+  'Dermatological Peptides':       { icon: '♦', description: 'Compounds studied in collagen synthesis, melanogenesis, and dermatological research' },
+  'Mitochondrial Peptides':        { icon: '◇', description: 'Mitochondria-targeting compounds studied in cellular energy metabolism research' },
 };
 
 function getCategoryCount(category) {
@@ -36,7 +34,7 @@ const steps = [
   {
     num: '01',
     title: 'Browse the catalog',
-    body: 'Filter by goal or search by name. Each compound shows availability and size options.',
+    body: 'Filter by compound class or search by name. Each compound shows availability and size options.',
   },
   {
     num: '02',
@@ -46,7 +44,7 @@ const steps = [
   {
     num: '03',
     title: 'Pay via Venmo',
-    body: `Send payment to @${siteConfig.venmo} — dosing instructions ship with every order.`,
+    body: `Send payment to @${siteConfig.venmo} and your order will be fulfilled and shipped promptly.`,
   },
 ];
 
@@ -62,7 +60,7 @@ export default function HomePage() {
             Your <span style={{ color: '#0f2744' }}>Daily</span><span style={{ color: '#1d6fb8' }}>Pep</span>
           </h1>
           <p className="text-center text-lg text-muted leading-relaxed mb-10">
-            {siteConfig.tagline} Dosing instructions included with every order.
+            {siteConfig.tagline}
           </p>
           <div className="flex justify-center">
             <Link href="/catalog" className="btn-primary">Browse Catalog</Link>
@@ -91,8 +89,7 @@ export default function HomePage() {
           <span className="text-amber-500 text-sm mt-0.5">⚠</span>
           <p className="text-xs text-amber-800 leading-relaxed">
             <span className="font-semibold uppercase tracking-wide text-[10px] mr-2">Research Use Only</span>
-            All products are intended for research purposes only and are not approved by the FDA for human use.
-            By browsing or purchasing, you confirm you are a qualified researcher and will comply with all applicable laws.
+            All products are sold strictly for laboratory research purposes only. Not for human or animal consumption. Not FDA approved. Not intended to diagnose, treat, cure, or prevent any disease.
           </p>
         </div>
       </section>

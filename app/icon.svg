@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <!-- Navy background circle -->
+  <circle cx="20" cy="20" r="20" fill="#0f2744"/>
+  <!-- Center ring -->
+  <circle cx="20" cy="21" r="5" stroke="white" stroke-width="2" fill="none"/>
+  <!-- Top arm + blue node -->
+  <line x1="20" y1="16" x2="20" y2="9" stroke="white" stroke-width="1.8"/>
+  <circle cx="20" cy="7" r="2.8" fill="#1d6fb8"/>
+  <!-- Lower-left arm + white node -->
+  <line x1="15.5" y1="24.5" x2="9" y2="30" stroke="white" stroke-width="1.8"/>
+  <circle cx="7" cy="32" r="2.8" fill="white"/>
+  <!-- Lower-right arm + white node -->
+  <line x1="24.5" y1="24.5" x2="31" y2="30" stroke="white" stroke-width="1.8"/>
+  <circle cx="33" cy="32" r="2.8" fill="white"/>
+  <!-- Upper-right arm + blue node -->
+  <line x1="24.5" y1="17.5" x2="31" y2="11" stroke="white" stroke-width="1.8"/>
+  <circle cx="33" cy="9" r="2.8" fill="#1d6fb8"/>
+</svg>

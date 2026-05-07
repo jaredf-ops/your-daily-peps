@@ -6,7 +6,7 @@ const ALL_CATEGORIES = [
   'GLP-1 & Metabolic Analogs','Growth Hormone Peptides','Tissue Repair Peptides',
   'Anti-Inflammatory Peptides','Longevity Research Peptides','Neurological Peptides',
   'Melanocortin Peptides','Immunomodulatory Peptides','Dermatological Peptides',
-  'Mitochondrial Peptides',
+  'Mitochondrial Peptides','Supplies',
 ];
 
 const categoryMeta = {
@@ -20,6 +20,7 @@ const categoryMeta = {
   'Immunomodulatory Peptides':     { icon: '◫', description: 'Peptides studied in immune regulation, T-cell function, and antimicrobial activity' },
   'Dermatological Peptides':       { icon: '♦', description: 'Compounds studied in collagen synthesis, melanogenesis, and dermatological research' },
   'Mitochondrial Peptides':        { icon: '◇', description: 'Mitochondria-targeting compounds studied in cellular energy metabolism research' },
+  'Supplies':                      { icon: '⊕', description: 'Bacteriostatic water, syringes, and lab supplies for research use' },
 };
 
 function getCategoryCount(category) {

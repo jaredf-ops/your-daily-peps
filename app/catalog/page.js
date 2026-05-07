@@ -10,7 +10,7 @@ const ALL_CATEGORIES = [
   'GLP-1 & Metabolic Analogs','Growth Hormone Peptides','Tissue Repair Peptides',
   'Anti-Inflammatory Peptides','Longevity Research Peptides','Neurological Peptides',
   'Melanocortin Peptides','Immunomodulatory Peptides','Dermatological Peptides',
-  'Mitochondrial Peptides',
+  'Mitochondrial Peptides','Supplies',
 ];
 
 const categoryColors = {
@@ -24,6 +24,7 @@ const categoryColors = {
   'Immunomodulatory Peptides':     'border-cyan-200 text-cyan-600',
   'Dermatological Peptides':       'border-pink-200 text-pink-600',
   'Mitochondrial Peptides':        'border-amber-200 text-amber-700',
+  'Supplies':                      'border-slate-200 text-slate-600',
 };
 
 function ProductCard({ product, onViewDetails }) {

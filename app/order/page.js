@@ -345,7 +345,7 @@ export default function OrderPage() {
                 <div className="border-t border-border pt-4 space-y-2">
                   <div className="flex justify-between text-xs text-muted">
                     <span>Subtotal</span>
-                    <span className="font-mono">${subtotal}</span>
+                    <span className="font-mono">${subtotal + extrasTotal}</span>
                   </div>
                   <div className="flex justify-between text-xs text-muted">
                     <span>Shipping</span>

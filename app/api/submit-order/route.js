@@ -179,7 +179,7 @@ export async function POST(req) {
           </div>
 
           <p style="margin:0 0 20px;font-size:12px;color:#6b7280;line-height:1.5;">
-            Once we confirm your payment, we&apos;ll fulfill and ship your order. Questions? Text us at 801-336-8567.
+            Once we confirm your payment, we&apos;ll fulfill and ship your order. Questions? Text us at 801-726-5041.
           </p>
 
           <div style="background:#fffbeb;border:1px solid #fcd34d;border-radius:4px;padding:14px 16px;margin-bottom:20px;">

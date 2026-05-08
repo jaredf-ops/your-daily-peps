@@ -65,17 +65,17 @@ function ProductCard({ product, onViewDetails }) {
   }
 
   return (
-    <div className={`flex items-center gap-3 px-4 py-3.5 border-b border-border last:border-b-0 transition-colors duration-150 ${available ? 'bg-surface hover:bg-surface-2' : 'opacity-50 bg-surface-2'}`}>
+    <div className={`flex flex-wrap items-center gap-x-3 gap-y-2 px-4 py-3.5 border-b border-border last:border-b-0 transition-colors duration-150 ${available ? 'bg-surface hover:bg-surface-2' : 'opacity-50 bg-surface-2'}`}>
 
-      {/* Name + category */}
-      <div className="flex-1 min-w-0">
+      {/* Name + category — full width on mobile, flex-1 on desktop */}
+      <div className="w-full sm:w-auto sm:flex-1 sm:min-w-0">
         <button
           onClick={() => onViewDetails(product)}
           className="text-sm font-semibold text-primary leading-tight hover:text-accent transition-colors text-left"
         >
           {product.name}
         </button>
-        <p className="text-xs text-muted mt-0.5 truncate">
+        <p className="text-xs text-muted mt-0.5 sm:truncate">
           {product.categories.join(' · ')}
         </p>
       </div>
@@ -92,7 +92,7 @@ function ProductCard({ product, onViewDetails }) {
           ))}
         </select>
       ) : (
-        <span className="text-xs text-muted shrink-0 w-28 text-right">{product.sizes[0].label}</span>
+        <span className="text-xs text-muted shrink-0">{product.sizes[0].label}</span>
       )}
 
       {/* Price */}
@@ -101,7 +101,7 @@ function ProductCard({ product, onViewDetails }) {
       </span>
 
       {/* Action */}
-      <div className="shrink-0 w-20 text-right">
+      <div className="ml-auto sm:ml-0 sm:w-20 sm:text-right shrink-0">
         {!available || !sizeInStock ? (
           <span className="text-xs font-mono text-oos">Out of stock</span>
         ) : added ? (

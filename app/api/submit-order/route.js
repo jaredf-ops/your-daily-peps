@@ -182,6 +182,13 @@ export async function POST(req) {
             Once we confirm your payment, we&apos;ll fulfill and ship your order. Questions? Text us at 801-336-8567.
           </p>
 
+          <div style="background:#fffbeb;border:1px solid #fcd34d;border-radius:4px;padding:14px 16px;margin-bottom:20px;">
+            <p style="margin:0 0 4px;font-size:10px;font-weight:700;color:#92400e;text-transform:uppercase;letter-spacing:0.05em;">Research Use Only</p>
+            <p style="margin:0;font-size:11px;color:#78350f;line-height:1.5;">
+              All products are intended for research purposes only and are not intended for human consumption or use in clinical applications. This material is sold for laboratory research use only. Not for veterinary use, food, drug, or household use. By purchasing any product, you acknowledge that these compounds are not approved by the FDA for human use and that you will comply with all applicable laws and regulations regarding their handling and use.
+            </p>
+          </div>
+
           <p style="margin:0;font-size:10px;color:#9ca3af;line-height:1.4;border-top:1px solid #e5e7eb;padding-top:16px;">
             Your Daily Pep | yourdailypep.com | All products are for research use only.
           </p>

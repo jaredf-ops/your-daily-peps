@@ -363,12 +363,6 @@ export default function OrderPage() {
                   </div>
                 </div>
 
-                {/* Venmo preview */}
-                <div className="mt-4 pt-4 border-t border-border">
-                  <p className="text-[10px] text-muted text-center mb-1">You&apos;ll pay via Venmo after submitting</p>
-                  <p className="text-xs text-center font-mono text-primary">@{siteConfig.venmo}</p>
-                </div>
-
                 <button
                   type="submit"
                   disabled={loading || items.length === 0}

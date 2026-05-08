@@ -65,71 +65,55 @@ function ProductCard({ product, onViewDetails }) {
   }
 
   return (
-    <div className={`card p-5 flex flex-col gap-4 border-t-[3px] border-t-[#1d6fb8] transition-all duration-200 ${available ? 'hover:border-accent/30 hover:bg-surface-2' : 'opacity-50'}`}>
+    <div className={`flex items-center gap-3 px-4 py-3.5 border-b border-border last:border-b-0 transition-colors duration-150 ${available ? 'hover:bg-surface-2' : 'opacity-50 bg-surface'}`}>
 
-      {/* Name + categories */}
-      <div>
-        <h3 className="text-sm font-semibold text-primary leading-tight mb-2">{product.name}</h3>
-        <div className="flex flex-wrap gap-1">
-          {product.categories.map((cat) => (
-            <span key={cat} className={`badge ${categoryColors[cat] || 'border-border text-muted'}`}>
-              {cat}
-            </span>
-          ))}
-        </div>
+      {/* Name + category */}
+      <div className="flex-1 min-w-0">
+        <button
+          onClick={() => onViewDetails(product)}
+          className="text-sm font-semibold text-primary leading-tight hover:text-accent transition-colors text-left"
+        >
+          {product.name}
+        </button>
+        <p className="text-xs text-muted mt-0.5 truncate">
+          {product.categories.join(' · ')}
+        </p>
       </div>
 
-      {/* Size selector */}
-      {available && (
-        <div>
-          {product.sizes.length === 1 ? (
-            <div className="flex items-center justify-between">
-              <span className="text-xs text-muted">{product.sizes[0].label}</span>
-              <span className="text-base font-mono font-bold text-accent">${product.sizes[0].price}</span>
-            </div>
-          ) : (
-            <div className="flex items-center justify-between gap-2">
-              <select
-                value={selectedSize.label}
-                onChange={(e) => setSelectedSize(product.sizes.find(s => s.label === e.target.value))}
-                className="input-field text-xs py-1.5 flex-1"
-              >
-                {product.sizes.map((s) => (
-                  <option key={s.label} value={s.label}>{s.label}</option>
-                ))}
-              </select>
-              <span className="text-base font-mono font-bold text-accent shrink-0">${selectedSize.price}</span>
-            </div>
-          )}
-        </div>
+      {/* Size */}
+      {product.sizes.length > 1 ? (
+        <select
+          value={selectedSize.label}
+          onChange={(e) => setSelectedSize(product.sizes.find(s => s.label === e.target.value))}
+          className="input-field text-xs py-1 shrink-0 w-36"
+        >
+          {product.sizes.map((s) => (
+            <option key={s.label} value={s.label}>{s.label}</option>
+          ))}
+        </select>
+      ) : (
+        <span className="text-xs text-muted shrink-0 w-28 text-right">{product.sizes[0].label}</span>
       )}
 
-      {/* Footer */}
-      <div className="flex items-center justify-between mt-auto pt-3 border-t border-border">
-        <span className={`flex items-center gap-1.5 text-xs font-mono ${available ? 'text-available' : 'text-oos'}`}>
-          <span className={`w-1.5 h-1.5 rounded-full ${available ? 'bg-available' : 'bg-oos'}`} />
-          {available ? 'Available' : 'Out of Stock'}
-        </span>
-        <div className="flex items-center gap-3">
+      {/* Price */}
+      <span className={`text-sm font-mono font-bold shrink-0 w-10 text-right ${available && sizeInStock ? 'text-accent' : 'text-muted'}`}>
+        {available && selectedSize.price > 0 ? `$${selectedSize.price}` : '—'}
+      </span>
+
+      {/* Action */}
+      <div className="shrink-0 w-20 text-right">
+        {!available || !sizeInStock ? (
+          <span className="text-xs font-mono text-oos">Out of stock</span>
+        ) : added ? (
+          <span className="text-xs font-mono text-available">Added ✓</span>
+        ) : (
           <button
-            onClick={() => onViewDetails(product)}
-            className="text-xs text-[#374151] font-medium hover:text-primary transition-colors underline underline-offset-2"
+            onClick={handleAdd}
+            className="text-xs font-semibold text-white bg-accent hover:bg-[#1558a0] transition-colors px-3 py-1.5 rounded-sm"
           >
-            Details
+            Add
           </button>
-          {available && (
-            sizeInStock ? (
-              <button
-                onClick={handleAdd}
-                className={`text-xs font-medium transition-colors ${added ? 'text-available' : 'text-accent hover:underline underline-offset-2'}`}
-              >
-                {added ? 'Added ✓' : 'Add to Cart →'}
-              </button>
-            ) : (
-              <span className="text-xs font-mono text-oos">Out of Stock</span>
-            )
-          )}
-        </div>
+        )}
       </div>
     </div>
   );
@@ -255,7 +239,7 @@ function HomeContent() {
               </button>
             </div>
           ) : (
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="card overflow-hidden p-0">
               {filtered.map((product) => (
                 <ProductCard
                   key={product.id}

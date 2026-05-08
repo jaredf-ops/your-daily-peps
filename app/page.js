@@ -51,10 +51,14 @@ const steps = [
 function ProductCard({ product, onViewDetails }) {
   const { addItem } = useCart();
   const available = product.status === 'available';
-  const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
+  const firstAvailableSize = product.sizes.find(s => !s.label.includes('Out of Stock')) || product.sizes[0];
+  const [selectedSize, setSelectedSize] = useState(firstAvailableSize);
   const [added, setAdded] = useState(false);
 
+  const sizeInStock = !selectedSize.label.includes('Out of Stock');
+
   function handleAdd() {
+    if (!sizeInStock) return;
     addItem(product, selectedSize);
     setAdded(true);
     setTimeout(() => setAdded(false), 1500);
@@ -114,12 +118,16 @@ function ProductCard({ product, onViewDetails }) {
             Details
           </button>
           {available && (
-            <button
-              onClick={handleAdd}
-              className={`text-xs font-medium transition-colors ${added ? 'text-available' : 'text-accent hover:underline underline-offset-2'}`}
-            >
-              {added ? 'Added ✓' : 'Add to Cart →'}
-            </button>
+            sizeInStock ? (
+              <button
+                onClick={handleAdd}
+                className={`text-xs font-medium transition-colors ${added ? 'text-available' : 'text-accent hover:underline underline-offset-2'}`}
+              >
+                {added ? 'Added ✓' : 'Add to Cart →'}
+              </button>
+            ) : (
+              <span className="text-xs font-mono text-oos">Out of Stock</span>
+            )
           )}
         </div>
       </div>

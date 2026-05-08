@@ -65,7 +65,7 @@ function ProductCard({ product, onViewDetails }) {
   }
 
   return (
-    <div className={`flex items-center gap-3 px-4 py-3.5 border-b border-border last:border-b-0 transition-colors duration-150 ${available ? 'hover:bg-surface-2' : 'opacity-50 bg-surface'}`}>
+    <div className={`flex items-center gap-3 px-4 py-3.5 border-b border-border last:border-b-0 transition-colors duration-150 ${available ? 'bg-surface hover:bg-surface-2' : 'opacity-50 bg-surface-2'}`}>
 
       {/* Name + category */}
       <div className="flex-1 min-w-0">

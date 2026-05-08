@@ -44,8 +44,8 @@ const steps = [
   },
   {
     num: '03',
-    title: 'Pay via Venmo',
-    body: `Send payment to @${siteConfig.venmo} and your order will be fulfilled and shipped promptly.`,
+    title: 'Complete payment',
+    body: 'After submitting your order you will receive an email with payment instructions. Your order will be fulfilled once payment is confirmed.',
   },
 ];
 

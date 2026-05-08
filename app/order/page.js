@@ -6,37 +6,30 @@ import { useCart } from '@/context/CartContext';
 import siteConfig from '@/lib/siteConfig';
 
 function SuccessScreen({ total, name }) {
-  const venmoUrl = `venmo://paycharge?txn=pay&recipients=${siteConfig.venmo}&amount=${total}&note=YDP Order`;
-
   return (
     <div className="max-w-lg mx-auto px-6 py-20 text-center">
       <div className="text-4xl mb-6">✓</div>
       <h1 className="text-2xl font-bold text-primary mb-2">Order Received</h1>
       <p className="text-sm text-muted mb-10">
-        Thanks {name}. We have your order and will fulfill it once we confirm your Venmo payment.
+        Thanks {name}. Your order has been submitted successfully.
       </p>
 
       <div className="card p-6 text-left mb-6">
-        <p className="section-label mb-4">Pay via Venmo</p>
-        <div className="space-y-2 mb-6">
-          <div className="flex justify-between text-sm">
-            <span className="text-muted">Send to</span>
-            <span className="font-mono font-bold text-primary">@{siteConfig.venmo}</span>
-          </div>
-          <div className="flex justify-between text-sm">
-            <span className="text-muted">Amount</span>
-            <span className="font-mono font-bold text-accent text-lg">${total}</span>
-          </div>
-        </div>
-        <a
-          href={venmoUrl}
-          className="btn-primary w-full text-center block"
-        >
-          Open Venmo →
-        </a>
-        <p className="text-[10px] text-muted text-center mt-3">
-          If the link doesn&apos;t open Venmo, search @{siteConfig.venmo} in the app manually.
-        </p>
+        <p className="section-label mb-3">What happens next</p>
+        <ol className="space-y-3">
+          <li className="flex gap-3 text-sm">
+            <span className="font-mono text-accent font-bold shrink-0">01</span>
+            <span className="text-muted">Check your email — we&apos;ve sent you a confirmation with payment instructions.</span>
+          </li>
+          <li className="flex gap-3 text-sm">
+            <span className="font-mono text-accent font-bold shrink-0">02</span>
+            <span className="text-muted">Complete your payment using the instructions in the email.</span>
+          </li>
+          <li className="flex gap-3 text-sm">
+            <span className="font-mono text-accent font-bold shrink-0">03</span>
+            <span className="text-muted">Once payment is confirmed, your order will be fulfilled and shipped promptly.</span>
+          </li>
+        </ol>
       </div>
 
       <p className="text-xs text-muted mb-6">

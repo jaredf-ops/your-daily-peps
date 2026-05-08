@@ -50,7 +50,7 @@ export default function CartDrawer() {
                 onClick={() => setIsOpen(false)}
                 className="text-xs text-accent hover:underline underline-offset-2"
               >
-                Browse catalog →
+                Browse products →
               </button>
             </div>
           ) : (

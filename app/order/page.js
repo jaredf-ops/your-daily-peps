@@ -36,8 +36,8 @@ function SuccessScreen({ total, name }) {
         Questions? Text us at <span className="font-mono">{siteConfig.phone}</span>
       </p>
 
-      <Link href="/catalog" className="text-xs text-accent hover:underline underline-offset-2">
-        ← Back to catalog
+      <Link href="/" className="text-xs text-accent hover:underline underline-offset-2">
+        ← Back to products
       </Link>
     </div>
   );
@@ -174,7 +174,7 @@ export default function OrderPage() {
       {items.length === 0 ? (
         <div className="text-center py-20">
           <p className="text-muted font-mono text-sm mb-4">Your cart is empty.</p>
-          <Link href="/catalog" className="btn-primary">Browse Catalog</Link>
+          <Link href="/" className="btn-primary">Browse Products</Link>
         </div>
       ) : (
         <form onSubmit={handleSubmit}>

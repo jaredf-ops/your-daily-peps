@@ -33,7 +33,7 @@ const availableCount = products.filter((p) => p.status === 'available').length;
 const steps = [
   {
     num: '01',
-    title: 'Browse the catalog',
+    title: 'Browse products',
     body: 'Filter by compound class or search by name. Each compound shows availability and size options.',
   },
   {
@@ -202,10 +202,10 @@ function HomeContent() {
           </div>
         </section>
 
-        {/* Catalog */}
+        {/* Products */}
         <section className="py-12">
           <p className="section-label mb-3">Research Compounds</p>
-          <h2 className="text-3xl font-bold text-primary tracking-tight mb-8">Catalog</h2>
+          <h2 className="text-3xl font-bold text-primary tracking-tight mb-8">Products</h2>
 
           {/* Controls */}
           <div className="flex flex-col sm:flex-row gap-4 mb-8">

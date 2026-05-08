@@ -53,7 +53,7 @@ export default function ProductDetailPanel({ product, onClose }) {
             onClick={onClose}
             className="text-xs font-mono text-muted hover:text-primary transition-colors"
           >
-            ← Back to catalog
+            ← Back to products
           </button>
           <span className={`flex items-center gap-1.5 text-xs font-mono ${available ? 'text-available' : 'text-oos'}`}>
             <span className={`w-1.5 h-1.5 rounded-full ${available ? 'bg-available' : 'bg-oos'}`} />

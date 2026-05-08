@@ -18,7 +18,7 @@ export default function Header() {
 
         {/* Desktop nav — absolutely centered */}
         <nav className="hidden sm:flex items-center gap-6 absolute left-1/2 -translate-x-1/2">
-          <Link href="/" className="text-sm text-muted hover:text-primary transition-colors">Catalog</Link>
+          <Link href="/" className="text-sm text-muted hover:text-primary transition-colors">Products</Link>
           <Link href="/faq" className="text-sm text-muted hover:text-primary transition-colors">FAQ</Link>
         </nav>
 
@@ -53,7 +53,7 @@ export default function Header() {
             onClick={() => setMenuOpen(false)}
             className="text-sm text-primary font-medium"
           >
-            Catalog
+            Products
           </Link>
           <Link
             href="/faq"

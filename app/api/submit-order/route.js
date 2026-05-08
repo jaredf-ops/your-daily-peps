@@ -111,7 +111,7 @@ export async function POST(req) {
             ${order.extrasTotal > 0 ? `<tr><td style="padding:4px 0;color:#6b7280;">Supplies</td><td style="text-align:right;">$${order.extrasTotal}</td></tr>` : ''}
             ${order.discount > 0 ? `<tr><td style="padding:4px 0;color:#16a34a;">Coupon (${order.couponCode})</td><td style="text-align:right;color:#16a34a;">-$${order.discount}</td></tr>` : ''}
             <tr style="border-top:2px solid #111827;">
-              <td style="padding:10px 0 4px;font-weight:700;font-size:16px;">Total Due via Venmo</td>
+              <td style="padding:10px 0 4px;font-weight:700;font-size:16px;">Total Due</td>
               <td style="text-align:right;font-weight:700;font-size:16px;color:#1d6fb8;">$${order.total}</td>
             </tr>
           </table>
@@ -165,11 +165,17 @@ export async function POST(req) {
             </tr>
           </table>
 
-          <div style="background:#dbeafe;border:1px solid #93c5fd;border-radius:4px;padding:16px;margin-bottom:20px;">
-            <p style="margin:0 0 8px;font-size:14px;color:#111827;line-height:1.5;">
-              To complete your order, send $${order.total} to @YourDailyPeps on Venmo.
+          <div style="background:#dbeafe;border:1px solid #93c5fd;border-radius:4px;padding:20px;margin-bottom:20px;text-align:center;">
+            <p style="margin:0 0 4px;font-size:13px;color:#374151;">To complete your order, send</p>
+            <p style="margin:0 0 12px;font-size:28px;font-weight:700;color:#1d6fb8;">$${order.total}</p>
+            <p style="margin:0 0 16px;font-size:13px;color:#374151;">to <strong>@Darcee-Felt</strong> on Venmo</p>
+            <a href="https://venmo.com/u/Darcee-Felt?txn=pay&amount=${order.total}&note=YDP%20Order"
+               style="display:inline-block;background:#0f2744;color:white;font-weight:700;font-size:14px;padding:12px 28px;border-radius:4px;text-decoration:none;">
+              Pay @Darcee-Felt on Venmo →
+            </a>
+            <p style="margin:12px 0 0;font-size:11px;color:#6b7280;">
+              If the button doesn&apos;t open Venmo, search <strong>@Darcee-Felt</strong> in the app manually.
             </p>
-            <p style="margin:0;font-size:16px;font-weight:700;color:#1d6fb8;">@YourDailyPeps</p>
           </div>
 
           <p style="margin:0 0 20px;font-size:12px;color:#6b7280;line-height:1.5;">
@@ -201,7 +207,7 @@ export async function POST(req) {
       await getResend().emails.send({
         from:    'orders@yourdailypep.com',
         to:      order.email,
-        subject: `Your Order is Confirmed — $${order.total} due via Venmo`,
+        subject: `Your Order is Confirmed — Payment Instructions Inside`,
         html:    confirmationHtml,
       });
     } catch (confirmationErr) {

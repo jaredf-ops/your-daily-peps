@@ -161,20 +161,6 @@ function HomeContent() {
             </p>
           </div>
 
-          {/* Stats strip */}
-          <div className="flex flex-wrap gap-8 mt-14 pt-8 border-t border-border">
-            {[
-              { value: `${products.length}`,      label: 'Compounds'     },
-              { value: `${availableCount}`,        label: 'In Stock'      },
-              { value: `${ALL_CATEGORIES.length}`, label: 'Categories'   },
-              { value: '$8',                        label: 'Flat Shipping' },
-            ].map(({ value, label }) => (
-              <div key={label}>
-                <p className="text-3xl font-bold font-mono text-accent">{value}</p>
-                <p className="text-xs text-muted mt-1 uppercase tracking-widest font-mono">{label}</p>
-              </div>
-            ))}
-          </div>
         </section>
 
         {/* Disclaimer */}
